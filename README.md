@@ -1,6 +1,4 @@
-
-				   libgphoto2
-				   ----------
+#libgphoto2
 
 Hello and welcome to the wonderful world of gphoto! This is libgphoto2, the 
 successor of gphoto with lots of new features and additional camera
@@ -9,31 +7,23 @@ drivers.
 If you miss a feature, would like to report success or failure, or have any
 questions, please don't hesitate to contact our mailing list.
 
-
-
-What is libgphoto2?
--------------------
-
+##What is libgphoto2?
 libgphoto2 is a library that can be used by applications to access various 
 digital cameras.  
 
 For more information on gphoto, see
 
-        @URL_GPHOTO_HOME@
+    @URL_GPHOTO_HOME@
 
 There, you can also get information on mailing lists, supported cameras,
 and availability of gphoto2. Another source of information is
 
-        @URL_GPHOTO_PROJECT@
+    @URL_GPHOTO_PROJECT@
 
 where you can access our SVN server to fetch the source code of
 gphoto2, gtkam and GnoCam (see below).
 
-
-
-What is libgphoto2 not?
------------------------
-
+##What is libgphoto2 not?
 libgphoto2 itself is not a GUI application, opposed to gphoto. There are
 GUI frontends for the gphoto2 library, however, such as gtkam for
 example.
@@ -52,10 +42,10 @@ longer everyday, so we won't publish it.
 
 For a more up to date list, you can consult 
 
-	@URL_DIGICAM_LIST@
+    @URL_DIGICAM_LIST@
 
 Your operating system will tell you about that because it is likely to recognise
-the device as a SCSI disk that you can mount (for Linux 'dmesg' will tell you).
+the device as a SCSI disk that you can mount (for Linux `dmesg` will tell you).
 Again, those cameras *cannot* be accessed through libgphoto2. Some of them can
 be switched to use a different communication protocol and might be in that case
 useable with libgphoto2.
@@ -74,24 +64,16 @@ MTP (Microsoft Transfer Protocol) capable devices will also be accessible,
 since MTP is based on PTP.
 
 
-Platforms
----------
-
+##Platforms
 libgphoto2 should compile and run on pretty much all Unix-like platforms.
-libgphoto2 has _not_ (yet?) been ported to any operating system from MicroSoft.
+libgphoto2 has _not_ (yet?) been ported to any operating system from Microsoft.
 
-
-
-How to set up libgphoto2
-------------------------
-
+##How to set up libgphoto2
 For information on how to set up libgphoto2 and its frontends, see 
 The gPhoto2 Manual.
 
 It is available at the following places:
-
- - At the gphoto website: @URL_GPHOTO_HOME@
-
+ - At the gphoto website: http://www.gphoto.org/ <!-- or @URL_GPHOTO_HOME@ -->
  - In the SVN module gphoto2-manual
 
 The gPhoto2 Manual includes information about setting up USB
@@ -100,11 +82,7 @@ hotplugging.
 If you run into problems, you may also consult the FAQ (also included
 in The gPhoto2 Manual).
 
-
-
-Frontends
----------
-
+##Frontends
 gphoto2 is a command line frontend which is quite powerful, 
 especially in combination with scripts. See The gPhoto2 Manual 
 for a short description. 
@@ -116,29 +94,23 @@ capture abilitiy.
 Additionally, there are plugins for other programs available like
 kio_camera (KDE - Konqueror) and a fuse plugin, gphotofs.
 
-
-
-Reporting Bugs
---------------
-
+##Reporting Bugs
 Every piece of software contains errors and flaws. So does
 libgphoto2. When you encounter something that does not work, please do
 the following: 
 
 1. Find out whether this is a known problem.
-
 2. Reproduce the problem with debug output enabled and the language
    set to English, so that the development team will understand the
    messages. You can do this by running:
 
-      env LC_ALL=C gtkam
+    env LC_ALL=C gtkam
 
    if you're using the gtkam frontend or running:
 
-      env LC_ALL=C gphoto2 --debug-logfile=logfile.log --debug <options>
+    env LC_ALL=C gphoto2 --debug-logfile=logfile.log --debug <options>
 
    using the gphoto2 command line interface.
-
 3. Report the problem on the mailing list with the corresponding debug
    output if it is small. If it is more than a few kilobytes, please
    don't post the complete debug output on the list.
